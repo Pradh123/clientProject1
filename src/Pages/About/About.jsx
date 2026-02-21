@@ -6,13 +6,11 @@ import {
   Grid,
   Card,
   CardContent,
- 
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { FreeBusinessConsultationForm } from "../Home/Home";
 
 // Styled components with the specified color scheme
-
 
 const YellowAccentBox = styled(Box)(({ theme }) => ({
   backgroundColor: "#fedd24",
@@ -29,20 +27,13 @@ const StoryCard = styled(Card)(({ theme }) => ({
 }));
 
 const About = () => {
-
-
-
- 
-
-  
-
   return (
     <Box sx={{ backgroundColor: "white", minHeight: "100vh" }}>
       {/* Hero Section */}
       <Box sx={{ backgroundColor: "#f8f9fa" }}>
         {/* Founder's Office Scene */}
         <img
-          src="/Gemini_Generated_Image_z6v2y2z6v2y2z6v2.png"
+          src="/AboutUs.jpeg"
           alt=""
           className="w-[100vw]   max-h-[90vh]   object-cover border border-red-500"
         />

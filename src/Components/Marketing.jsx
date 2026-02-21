@@ -181,8 +181,6 @@ export const Marketing = () => {
     },
   ];
 
-  
-
   return (
     <Box sx={{ backgroundColor: "white", minHeight: "100vh" }}>
       {/* Hero Section */}
@@ -477,7 +475,7 @@ export const Marketing = () => {
                 <Box
                   sx={{
                     width: "100%",
-                    height: "200px",
+                    // height: "200px",
                     background: `linear-gradient(135deg, 
                         hsl(${item * 40}, 70%, 60%), 
                         hsl(${item * 40 + 30}, 70%, 50%))`,
@@ -489,7 +487,11 @@ export const Marketing = () => {
                     borderRadius: "10px",
                   }}
                 >
-                  Campaign {item}
+                  <img
+                    src="/public/ScocialMedis.jpeg"
+                    alt=""
+                    className="object-cover "
+                  />
                 </Box>
               </>
             ))}

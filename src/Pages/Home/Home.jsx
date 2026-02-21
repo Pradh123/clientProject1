@@ -39,7 +39,7 @@ const Home = () => {
         left: Math.random() * 80 + "%", // random between 0–90%
         animationDelay: `${Math.random() * 3}s`,
       })),
-    []
+    [],
   );
 
   const clients = [
@@ -83,31 +83,14 @@ const Home = () => {
   const [selected, setSelected] = useState(null);
   return (
     <Box>
-      <section className="relative flex flex-col items-center justify-center h-screen bg-gradient-to-br from-orange-500 to-yellow-400 text-white overflow-hidden">
-        {/* scattered icons */}
-        <div className="absolute inset-0 overflow-hidden">
-          {icons.map((icon, idx) => (
-            <span
-              key={idx}
-              className="absolute  sm:text-6xl  text-4xl opacity-30 animate-float select-none"
-              style={{
-                top: randomPositions[idx].top,
-                left: randomPositions[idx].left,
-                animationDelay: randomPositions[idx].animationDelay,
-              }}
-            >
-              {icon}
-            </span>
-          ))}
-        </div>
-
-        {/* main square box */}
-        <div className="relative z-10 border-4 border-yellow-300 bg-orange-500 text-center p-10 max-w-2xl rounded-2xl shadow-xl">
-          <h1 className="text-3xl md:text-4xl font-bold font-['Open Sans']">
-            Entering A Creative Square May Cause Extreme Brand Glow-Ups!
-          </h1>
-        </div>
-      </section>
+      <section
+        className="h-[100vh] w-full mt-0"
+        style={{
+          backgroundImage: "url('/Home.jpeg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      ></section>
 
       <section className="py-20 bg-gray-100 text-center">
         <h2 className="text-3xl font-bold mb-10">Our Clients</h2>
